@@ -1,5 +1,5 @@
 {% set name = "json-schema-for-humans" %}
-{% set version = "0.47" %}
+{% set version = "0.48" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/json_schema_for_humans-{{ version }}.tar.gz
-  sha256: 921870f72bc5d8a67e7af8c12e90fdc365fe1eb405e600e22820ead08d343112
+  sha256: 7862775b372b1578bf8e5467233b145164d6187c4f55304b81ee7b7b4ae60abf
 
 build:
   entry_points:
