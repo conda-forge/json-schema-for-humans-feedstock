@@ -1,5 +1,5 @@
 {% set name = "json-schema-for-humans" %}
-{% set version = "0.48" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/json_schema_for_humans-{{ version }}.tar.gz
-  sha256: 7862775b372b1578bf8e5467233b145164d6187c4f55304b81ee7b7b4ae60abf
+  sha256: ec1dfc54604747e8de5bf07c77c690fec3fa193ff5241b37bafb0158fe36d5f6
+  patches:
+    # https://github.com/coveooss/json-schema-for-humans/pull/242
+    - 0001-dev-dependencies.patch
 
 build:
   entry_points:
@@ -22,7 +25,7 @@ requirements:
     - poetry-core >=1.0.0
     - pip
   run:
-    - python >=3.7.0,<4.0.0
+    - python >=3.8.0,<4.0.0
     - click >=8.0.1,<9.0.0
     - dataclasses-json >=0.5.6,<0.6.0
     - htmlmin >=0.1.12,<0.2.0
