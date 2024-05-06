@@ -1,5 +1,5 @@
 {% set name = "json-schema-for-humans" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/json_schema_for_humans-{{ version }}.tar.gz
-  sha256: ec1dfc54604747e8de5bf07c77c690fec3fa193ff5241b37bafb0158fe36d5f6
+  sha256: 3e32701a7499eabb8585a3b9faf029aad94bf1c99b02bd54372d7a9b4696bb32
   patches:
     # https://github.com/coveooss/json-schema-for-humans/pull/242
     - 0001-dev-dependencies.patch
