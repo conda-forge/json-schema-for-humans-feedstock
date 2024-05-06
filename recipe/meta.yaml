@@ -8,9 +8,6 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/json_schema_for_humans-{{ version }}.tar.gz
   sha256: 3e32701a7499eabb8585a3b9faf029aad94bf1c99b02bd54372d7a9b4696bb32
-  patches:
-    # https://github.com/coveooss/json-schema-for-humans/pull/242
-    - 0001-dev-dependencies.patch
 
 build:
   entry_points:
